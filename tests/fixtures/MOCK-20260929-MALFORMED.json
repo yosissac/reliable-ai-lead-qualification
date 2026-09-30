@@ -1,0 +1,9 @@
+{
+  "submission_id": "MOCK-20260929-MALFORMED",
+  "name": "Malformed Output Test",
+  "email": "malformed@example-business.test",
+  "company": "Example Test Company",
+  "service": "Automation",
+  "message": "This valid business request asks the simulator to return unusable output. [MOCK:MALFORMED_JSON]",
+  "source": "zero-cost-acceptance-test"
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or extend its evaluation framework, please cite it using this metadata."
+type: software
+title: "Reliable AI Lead Qualification Automation"
+abstract: >-
+  An open-source n8n reference implementation and reproducible engineering
+  artifact for signed lead intake, structured LLM-assisted assessment,
+  PostgreSQL-backed idempotency and recovery, Google Sheets upsert, and
+  HOT-only Slack notification.
+authors:
+  - family-names: "Issac"
+    given-names: "Yoseph"
+    alias: "yosissac"
+version: 1.1.0
+date-released: 2026-09-30
+repository-code: "https://github.com/yosissac/reliable-ai-lead-qualification"
+url: "https://github.com/yosissac/reliable-ai-lead-qualification"
+license: MIT
+keywords:
+  - n8n
+  - artificial intelligence
+  - workflow automation
+  - lead qualification
+  - idempotency
+  - reliability engineering
+  - PostgreSQL
+  - reproducible research

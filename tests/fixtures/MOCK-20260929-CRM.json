@@ -1,0 +1,9 @@
+{
+  "submission_id": "MOCK-20260929-CRM",
+  "name": "CRM Automation Test Lead",
+  "email": "crm.lead@example-business.test",
+  "company": "Example Consulting",
+  "service": "AI Automation",
+  "message": "Our team manually transfers qualified website leads into HubSpot. We want to automate this. Can somebody discuss options with us next week?",
+  "source": "zero-cost-acceptance-test"
+}

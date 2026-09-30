@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install metadata only
+        run: npm install --package-lock-only --ignore-scripts
+
+      - name: Validate workflow and run tests
+        run: npm run check
+
+      - name: Validate database initialization syntax
+        run: bash -n db/init/001_lead_automation.sh
+
+      - name: Validate Docker Compose configuration
+        env:
+          POSTGRES_PASSWORD: test-owner-password
+          LEAD_DB_PASSWORD: test-app-password
+          N8N_ENCRYPTION_KEY: test-only-encryption-key-at-least-32-characters
+        run: docker compose config --quiet
+
+      - name: Confirm production-safe export
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const workflow = JSON.parse(fs.readFileSync('workflows/lead-qualification.json', 'utf8'));
+          if (workflow.active !== false) throw new Error('Workflow export must remain inactive');
+          const config = workflow.nodes.find((node) => node.name === 'Add Runtime Configuration');
+          if (!config?.parameters?.jsCode.includes('https://api.openai.com/v1/responses')) {
+            throw new Error('Production export no longer points to the production endpoint');
+          }
+          NODE

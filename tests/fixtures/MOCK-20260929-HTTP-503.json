@@ -1,0 +1,9 @@
+{
+  "submission_id": "MOCK-20260929-HTTP-503",
+  "name": "Persistent Outage Test",
+  "email": "outage@example-business.test",
+  "company": "Example Test Company",
+  "service": "Automation",
+  "message": "This valid business request simulates a persistent upstream service outage. [MOCK:HTTP_503]",
+  "source": "zero-cost-acceptance-test"
+}

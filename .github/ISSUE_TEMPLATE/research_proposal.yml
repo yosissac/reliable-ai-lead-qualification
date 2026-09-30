@@ -1,0 +1,40 @@
+name: Research or evaluation proposal
+description: Propose a measurable extension to the evaluation framework.
+title: "[Research]: "
+labels:
+  - research
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: State a focused question that can be answered with evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis or expected result
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Proposed method
+      description: Include dataset, comparison, metrics, controls, and analysis plan.
+    validations:
+      required: true
+  - type: textarea
+    id: validity
+    attributes:
+      label: Validity, ethics, and privacy considerations
+      description: Identify limitations, possible harms, bias risks, and data-governance needs.
+    validations:
+      required: true
+  - type: textarea
+    id: artifact
+    attributes:
+      label: Reproducibility artifact
+      description: Explain which code, fixtures, versions, and aggregate results could be published.
+    validations:
+      required: true

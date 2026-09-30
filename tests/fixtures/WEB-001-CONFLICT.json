@@ -1,0 +1,8 @@
+{
+  "submission_id": "WEB-001",
+  "name": "Sarah",
+  "email": "sarah@bright-logistics.test",
+  "company": "Bright Logistics",
+  "service": "Automation",
+  "message": "This changed requirement deliberately reuses an existing submission identifier and must not overwrite the original lead."
+}

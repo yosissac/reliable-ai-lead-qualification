@@ -1,0 +1,11 @@
+{
+  "submission_id": "MOCK-20260929-001",
+  "submitted_at": "2026-09-29T09:00:00Z",
+  "name": "Test Lead",
+  "email": "test.lead@example-business.test",
+  "company": "Example Test Logistics",
+  "phone": "+256-000-000000",
+  "service": "Automation",
+  "message": "We process about 2,000 delivery documents every month manually. We need an automation solution and have budget approved for this quarter.",
+  "source": "zero-cost-acceptance-test"
+}

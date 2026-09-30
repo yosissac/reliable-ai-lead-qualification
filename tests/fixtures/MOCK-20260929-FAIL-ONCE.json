@@ -1,0 +1,9 @@
+{
+  "submission_id": "MOCK-20260929-FAIL-ONCE",
+  "name": "Transient Failure Test",
+  "email": "failure.once@example-business.test",
+  "company": "Example Test Company",
+  "service": "Automation",
+  "message": "We process about 2,000 delivery documents manually and have approved budget. [MOCK:FAIL_ONCE]",
+  "source": "zero-cost-acceptance-test"
+}

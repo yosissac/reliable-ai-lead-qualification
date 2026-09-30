@@ -1,0 +1,10 @@
+.env
+.DS_Store
+node_modules/
+tmp/
+*.log
+*.zip
+coverage/
+.n8n/
+credentials*.json
+*decrypted*

@@ -1,0 +1,9 @@
+{
+  "submission_id": "MOCK-20260929-FALSE-HOT",
+  "name": "Guardrail Test",
+  "email": "guardrail@example-business.test",
+  "company": "Example Test Company",
+  "service": "Other",
+  "message": "This test makes the simulated model claim HOT while marking the lead irrelevant. [MOCK:FALSE_HOT]",
+  "source": "zero-cost-acceptance-test"
+}

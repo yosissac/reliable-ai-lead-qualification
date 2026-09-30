@@ -1,0 +1,7 @@
+{
+  "name": "Invalid Lead",
+  "email": "invalid@example.com",
+  "company": "Example",
+  "service": "Automation",
+  "message": "This record deliberately has no submission identifier."
+}
